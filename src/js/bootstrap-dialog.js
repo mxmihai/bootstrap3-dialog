@@ -1133,7 +1133,7 @@
             this.getModalBody().append(this.createBodyContent());
             this.getModal().data('bs.modal', new BootstrapDialogModal(this.getModal(), {
                 backdrop: 'static',
-                keyboard: false,
+                keyboard: this.options.closeByKeyboard,
                 show: false
             }));
             this.makeModalDraggable();
